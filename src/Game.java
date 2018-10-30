@@ -22,14 +22,30 @@ public class Game {
             if(choice==)
         }*/
 
-      int sage[]=new int[140];
-      sage[4]=6;
-      sage[8]=10;
+      int choices[]={0,1,2};
+       String answer;
+       Scanner keyboard;
+       keyboard=new Scanner(System.in);
 
-      System.out.println(sage[4]+sage[8]);
-int magna[]={8,556,7,77};
+       System.out.println("We are going to play a game of Rock,Paper,Scissor");
+        System.out.println("Here's the rubric 0=Rock 1=Paper 2=Scissors");
+        System.out.println("Are you Ready?");
 
-System.out.println(magna[2]);
+        for(int mag=1;mag<4;mag++){
+            System.out.println("Rock,Paper scissors,Shoot!!!(enter your answer below,Capitals)");
+            answer = keyboard.nextLine();
+
+            if(answer.equals(choices[0])){
+                System.out.println("Invalid Choice Game over");
+                System.exit(0);
+            }
+        }
+
+
+
+
+
+
 
     }
 }
