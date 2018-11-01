@@ -24,22 +24,41 @@ public class Game {
 
       int choices[]={0,1,2};
        String answer;
-       Scanner keyboard;
-       keyboard=new Scanner(System.in);
+        Scanner keyboard=new Scanner(System.in);
+       int score=80;
 
        System.out.println("We are going to play a game of Rock,Paper,Scissor");
+
         System.out.println("Here's the rubric 0=Rock 1=Paper 2=Scissors");
+        System.out.println("You'll get 60 points guess right gain 20 points ,guess wrong lose 20 points");
+
         System.out.println("Are you Ready?");
 
-        for(int mag=1;mag<4;mag++){
+            for(int mag=1;mag<4;mag++){
             System.out.println("Rock,Paper scissors,Shoot!!!(enter your answer below,Capitals)");
-            answer = keyboard.nextLine();
+            answer=keyboard.nextLine();
 
-            if(answer.equals(choices[0])){
-                System.out.println("Invalid Choice Game over");
-                System.exit(0);
-            }
+
+
+
+                    if(answer.equals(choices[0]))
+                    System.out.println("Try again ");
+                    System.out.println(score-20 +" points left");
+
+                    if(answer.equals(choices[1}))
+                    System.out.println("Pdd ");
+*/
+                     elseif(answer.equals(choices[1]))
+                     System.out.println("Nice Try");
+                     System.out.println(score-20+ "points left");
+
+             elseif(answer.equals(choices[2]))
+             System.out.println("GOOD JOB");
+             System.out.println(score+20+ "points left");
+
+
         }
+
 
 
 
