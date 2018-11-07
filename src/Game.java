@@ -28,11 +28,11 @@ public class Game {
 
                 if(answer==0)
                     System.out.println("Try again ");
-                    System.out.println(score - 20);
+                    System.out.println(score - 20+ "points");
 
                   else if(answer==1)
                       System.out.print("Game 0ver");
-                      System.out.print(score-20+" poinhts");
+                      System.out.print(score-20 +" poinhts");
 
                   else(answer==2)
                     System.out.println("WINNER");
